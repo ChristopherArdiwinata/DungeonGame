@@ -164,10 +164,10 @@ public class EntityFactory {
             return new Arrow(pos);
         case "bomb":
             int bombRadius = config.optInt("bomb_radius", Bomb.DEFAULT_RADIUS);
-            if (!config.has("logical_rule")) {
+            if (!jsonEntity.has("logic")) {
                 return new Bomb(pos, bombRadius, "or");
             }
-            return new Bomb(pos, bombRadius, config.getString("logical_rule"));
+            return new Bomb(pos, bombRadius, jsonEntity.getString("logic"));
         case "invisibility_potion":
             int invisibilityPotionDuration = config.optInt("invisibility_potion_duration",
                     InvisibilityPotion.DEFAULT_DURATION);
@@ -188,12 +188,12 @@ public class EntityFactory {
             return new Door(pos, jsonEntity.getInt("key"));
         case "key":
             return new Key(pos, jsonEntity.getInt("key"));
-            case "light_bulb_off":
-            return new LightBulb(pos, config.getString("logical_rule"));
+        case "light_bulb_off":
+            return new LightBulb(pos, jsonEntity.getString("logic"));
         case "wire":
             return new Wire(pos);
         case "switch_door":
-            return new SwitchDoor(pos, config.getString("logical_rule"));
+            return new SwitchDoor(pos, jsonEntity.getString("logic"));
         case "sun_stone":
             return new SunStone(pos, jsonEntity.getInt("key"));
         default:
