@@ -188,12 +188,12 @@ public class EntityFactory {
             return new Door(pos, jsonEntity.getInt("key"));
         case "key":
             return new Key(pos, jsonEntity.getInt("key"));
-            case "light_bulb_off":
-            return new LightBulb(pos, config.getString("logical_rule"));
+        case "light_bulb_off":
+            return new LightBulb(pos, config.getString("logic"));
         case "wire":
             return new Wire(pos);
         case "switch_door":
-            return new SwitchDoor(pos, config.getString("logical_rule"));
+            return new SwitchDoor(pos, config.getString("logic"));
         case "sun_stone":
             return new SunStone(pos, jsonEntity.getInt("key"));
         default:
