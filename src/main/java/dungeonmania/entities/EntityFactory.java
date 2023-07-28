@@ -193,7 +193,7 @@ public class EntityFactory {
         case "wire":
             return new Wire(pos);
         case "switch_door":
-            return new SwitchDoor(pos, jsonEntity.getString("logical_rule"));
+            return new SwitchDoor(pos, jsonEntity.getString("logic"));
         case "sun_stone":
             return new SunStone(pos, jsonEntity.getInt("key"));
         default:
