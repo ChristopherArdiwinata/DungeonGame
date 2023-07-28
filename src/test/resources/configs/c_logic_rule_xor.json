@@ -22,5 +22,5 @@
     "zombie_attack": 1,
     "zombie_health": 5,
     "zombie_spawn_interval": 1,
-    "logical_rule": "xor"
+    "logic": "xor"
 }
