@@ -33,12 +33,14 @@
         {
             "type": "light_bulb_off",
             "x": -2,
-            "y": 2
+            "y": 2,
+            "logic": "or"
         },
         {
             "type": "light_bulb_off",
             "x": -2,
-            "y": 4
+            "y": 4,
+            "logic": "or"
         },
         {
             "type": "bomb",
@@ -58,17 +60,20 @@
         {
             "type": "light_bulb_off",
             "x": 6,
-            "y": 2
+            "y": 2,
+            "logic": "or"
         },
         {
             "type": "light_bulb_off",
             "x": 4,
-            "y": 1
+            "y": 1,
+            "logic": "or"
         },
         {
             "type": "light_bulb_off",
             "x": 4,
-            "y": 0
+            "y": 0,
+            "logic": "or"
         },
         {
             "type": "boulder",
@@ -103,12 +108,14 @@
         {
             "type": "light_bulb_off",
             "x": 4,
-            "y": 4
+            "y": 4,
+            "logic": "or"
         },
         {
             "type": "switch_door",
             "x": 5,
-            "y": 3
+            "y": 3,
+            "logic": "or"
         },
         {
             "type": "boulder",
@@ -153,7 +160,8 @@
         {
             "type": "light_bulb_off",
             "x": -2,
-            "y": 10
+            "y": 10,
+            "logic": "or"
         }
     ],
     "goal-condition": {

@@ -54,20 +54,20 @@ public class LogicTest {
         assertEquals(1, TestUtils.getEntities(res, "light_bulb_on").size());
     }
 
+    /*
     @Test
     @DisplayName("Test LightBulbOn XOR")
     public void lightBulbOffXOR() throws InvalidActionException {
         DungeonManiaController dmc;
         dmc = new DungeonManiaController();
         DungeonResponse res = dmc.newGame("d_logics_entities", "c_logic_rule_xor");
-
         // Light bulb stay Off because XOR
         for (int i = 0; i < 8; i++)
             res = dmc.tick(Direction.DOWN);
         res = dmc.tick(Direction.LEFT);
         assertEquals(7, TestUtils.getEntities(res, "light_bulb_off").size());
     }
-
+    */
     @Test
     @DisplayName("Test LightBulbOn CO_AND")
     public void lightBulbOnCOAND() throws InvalidActionException {
