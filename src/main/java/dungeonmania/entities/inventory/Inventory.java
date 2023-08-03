@@ -89,8 +89,6 @@ public class Inventory {
             }
         }
 
-        falseTreasure = treasure;
-        falseKeys = keys;
         // shield creation
         if (wood >= 2 && (falseTreasure >= 1 || falseKeys >= 1)) {
             result.add("shield");
