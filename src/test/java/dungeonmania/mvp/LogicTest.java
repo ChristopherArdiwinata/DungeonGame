@@ -54,7 +54,6 @@ public class LogicTest {
         assertEquals(1, TestUtils.getEntities(res, "light_bulb_on").size());
     }
 
-    /*
     @Test
     @DisplayName("Test LightBulbOn XOR")
     public void lightBulbOffXOR() throws InvalidActionException {
@@ -68,7 +67,6 @@ public class LogicTest {
         res = dmc.tick(Direction.LEFT);
         assertEquals(7, TestUtils.getEntities(res, "light_bulb_off").size());
     }
-    */
 
     @Test
     @DisplayName("Test LightBulbOn CO_AND")
